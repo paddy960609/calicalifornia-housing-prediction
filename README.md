@@ -40,6 +40,7 @@ Target variable:
 - Identified missing values
 - Created correlation heatmap
 - Visualized geographic housing prices across California
+<img width="1018" height="682" alt="image" src="https://github.com/user-attachments/assets/1caeec72-467b-4871-bf80-c6674455544b" />
 
 ### 2. Data Preprocessing
 
@@ -62,6 +63,7 @@ Model performance was evaluated using:
 ---
 
 ## Results
+<img width="562" height="455" alt="image" src="https://github.com/user-attachments/assets/0dc4369f-e451-41ca-833a-28d783acb396" />
 
 | Metric | Value |
 |---------|-------|
@@ -82,6 +84,8 @@ The notebook includes:
 - Feature importance analysis
 - Actual vs. Predicted comparison
 - Residual analysis
+<img width="645" height="624" alt="image" src="https://github.com/user-attachments/assets/dc8ea8b1-72a6-43ec-8180-d0cbc7ee0b48" />
+
 <img width="589" height="416" alt="image" src="https://github.com/user-attachments/assets/e92233e0-b774-4271-9b54-dfa9df7c52ad" />
 
 ---
