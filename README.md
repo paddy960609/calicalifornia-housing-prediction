@@ -1,39 +1,135 @@
-# California Housing Price Prediction 🏡
+# California Housing Price Prediction
 
-This project uses the California Housing dataset to predict median house values using an XGBoost regressor.
+## Overview
 
-## 📦 Features
-- Combines training and test data from Kaggle
-- Preprocessing with `StandardScaler`
-- Trains an XGBoost Regressor
-- Evaluates model performance using RMSE and R²
-- Saves model and scaler for future use
+This project develops a machine learning model to predict California housing prices using demographic, geographic, and housing characteristics from the California Housing Dataset.
 
-## 🛠 Requirements
-See `requirements.txt` for full dependencies.
+The objective was to build an end-to-end machine learning pipeline, from exploratory data analysis and preprocessing to model training and evaluation, while demonstrating best practices in data analysis and predictive modeling.
 
-## 🚀 How to Run
+---
 
-```bash
-pip install -r requirements.txt
-python train_model.py
+## Dataset
+
+- **Dataset:** California Housing Dataset
+- **Source:** Scikit-learn
+- **Records:** 20,640
+- **Features:** 8 numerical predictors
+
+Predictor variables include:
+
+- Median Income
+- House Age
+- Average Rooms
+- Average Bedrooms
+- Population
+- Average Occupancy
+- Latitude
+- Longitude
+
+Target variable:
+
+- Median House Value
+
+---
+
+## Project Workflow
+
+### 1. Exploratory Data Analysis
+
+- Examined data distributions
+- Identified missing values
+- Created correlation heatmap
+- Visualized geographic housing prices across California
+
+### 2. Data Preprocessing
+
+- Removed missing values
+- Selected predictor variables
+- Split data into training and testing sets
+- Prepared data for model training
+
+### 3. Model Development
+
+Implemented an **XGBoost Regressor** to model nonlinear relationships between housing characteristics and median house values.
+
+### 4. Model Evaluation
+
+Model performance was evaluated using:
+
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+---
+
+## Results
+
+| Metric | Value |
+|---------|-------|
+| RMSE | **$45,116.54** |
+| R² Score | **0.84** |
+
+The final model explains approximately **84% of the variation** in California housing prices while maintaining an average prediction error of approximately **$45,000**.
+
+---
+
+## Key Visualizations
+
+The notebook includes:
+
+- Feature distributions
+- Correlation heatmap
+- Geographic housing price visualization
+- Feature importance analysis
+- Actual vs. Predicted comparison
+- Residual analysis
+<img width="589" height="416" alt="image" src="https://github.com/user-attachments/assets/e92233e0-b774-4271-9b54-dfa9df7c52ad" />
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- XGBoost
+
+---
+
+## Repository Structure
+
 ```
-
-## 📊 Output
-- Trained model score
-- RMSE and R² metrics
-- Histogram of housing data
-- Saved model and scaler under `/models`
-
-## 📁 Directory Structure
-```
-.
-├── train_model.py
-├── requirements.txt
+California-Housing-Prediction/
+│
+├── housingprice.ipynb
 ├── README.md
-├── models/
-└── data/
+└── images/
 ```
 
-## 🔗 Dataset
-Downloaded from Kaggle: https://www.kaggle.com/datasets/camnugent/california-housing-prices
+---
+
+## Future Improvements
+
+Potential enhancements include:
+
+- Hyperparameter optimization
+- Cross-validation
+- Comparison with Random Forest and LightGBM
+- Additional feature engineering
+- Model deployment as a web application
+
+---
+
+## Key Takeaways
+
+This project demonstrates:
+
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature engineering
+- Machine learning model development
+- Model evaluation and interpretation
+- Data visualization
+- End-to-end predictive analytics workflow
