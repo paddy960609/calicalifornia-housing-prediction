@@ -1,5 +1,11 @@
 # California Housing Price Prediction
 
+📓 Notebook: housingprice.ipynb
+
+📊 Model Performance:
+- RMSE: $45,116.54
+- R²: 0.84
+
 ## Overview
 
 This project develops a machine learning model to predict California housing prices using demographic, geographic, and housing characteristics from the California Housing Dataset.
@@ -7,6 +13,9 @@ This project develops a machine learning model to predict California housing pri
 The objective was to build an end-to-end machine learning pipeline, from exploratory data analysis and preprocessing to model training and evaluation, while demonstrating best practices in data analysis and predictive modeling.
 
 ---
+## Why this project?
+
+I completed this project to strengthen my machine learning skills by building a complete predictive modeling pipeline. Rather than focusing solely on model accuracy, I emphasized understanding the data, selecting appropriate evaluation metrics, and communicating results through clear visualizations and documentation.
 
 ## Dataset
 
